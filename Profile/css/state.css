@@ -7,3 +7,12 @@
     width: 50%;
   }
 }
+
+/*Nav Responsiveness Styling*/
+
+@media screen and (max width: 425px) {
+  nav {
+    /*Preliminary, probably needs finer adjustment*/
+    display: none;
+  }
+}
