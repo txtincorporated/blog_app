@@ -13,6 +13,9 @@ nav {
 }
 
 .folioName {
+  width: 60%;
+  font-size: 6rem;
+  letter-spacing: -.5rem;
   display: inline-block;
   margin: auto auto 0px auto;
 }
