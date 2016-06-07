@@ -16,11 +16,6 @@ Article.prototype.toHtml = function() {
 
   $newArticle.attr('data-category', this.category);
 
-  // TODO: Use jQuery to fill in the template with properties
-  // from this particular Article instance. We need to fill in:
-  // the author name and url, the article title and body, and the
-  // publication date.
-
   $('.template h1').text(this.title);
   $('.template a').text(this.author);
   $('.template a').attr('href',this.authorUrl);
@@ -34,7 +29,6 @@ Article.prototype.toHtml = function() {
 
   $('.template').append('<hr>');
 
-  // TODO: This cloned article is no longer a template, so we should remove that class...
   $('article').removeClass('template');
 
   return $newArticle;
